@@ -48,6 +48,15 @@ end
 
 group :development, :test do
   gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'growl'
+  gem 'spork-rails', github: 'sporkrb/spork-rails'
+  gem 'guard-spork'
+  gem 'childprocess'
+end
+
+group :development do
+  gem 'guard-livereload'
 end
 
 group :test do
